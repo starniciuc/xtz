@@ -33,7 +33,7 @@ body { font-family: "Open Sans", Times, serif; }
 
 /* 2. Header-top
 ------------------------------------------------------- */
-#header-top { background: #000000; padding-top: 10px; }
+#header-top { background: #ff0000; padding-top: 10px; }
 
 .site-branding { float: left; margin-top: 0px; padding-top: 0px; margin-top: -24px; }
 
