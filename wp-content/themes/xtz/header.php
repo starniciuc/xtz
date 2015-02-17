@@ -22,33 +22,67 @@
         <div id="parallax-bg"></div>
         <div id="page" class="hfeed site">
             <?php do_action('inkness_before'); ?>
-            <header id="masthead" role="banner">
-                    <div class="rows">
-                        <div class="col-md-6">
-                            <?php if ((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1)) { ?>
-                                <h1 class="site-title logo-container"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-                                        <?php
-                                        echo "<img class='main_logo' src='" . of_get_option('logo', true) . "' title='" . esc_attr(get_bloginfo('name', 'display')) . "'></a></h1>";
-                                    } else {
-                                        ?>
-                                <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1> 
-                                        <?php
-                                    }
-                                    ?>
-                        </div>
-                        <div class="default-nav-wrapper col-md-6"> 	
+            <div class="container-fluid">
+            <header id="masthead" role="banner" class="head-site">
+                
+                <div class="logo-side">
+                    <?php if ((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1)) { ?>
+                        <div class="logo-container">
+                            <div class="arr-logo"></div>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                                <?php
+                                echo "<img class='main_logo' src='" . of_get_option('logo', true) . "' title='" . esc_attr(get_bloginfo('name', 'display')) . "'></a></div>";
+                            } else {
+                                ?>
+                        <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1> 
+                                <?php
+                            }
+                            ?>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li>
+                                Imi place
+                            </li>
+                            <li>
+                                Ro Ru
+                            </li>
+                            <li>
+                                PRICELIST
+                            </li>
+                            <li>
+                                Adresa noastra
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12"> 	
+                        <div class="default-nav-wrapper ">
                             <nav id="site-navigation" class="main-navigation" role="navigation">
                                 <div id="nav-container">
                                     <h1 class="menu-toggle"></h1>
-                                    <div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e('Skip to content', 'inkness'); ?>"><?php _e('Skip to content', 'inkness'); ?></a></div>
+                                    <div class="screen-reader-text skip-link">
+                                        <a href="#content" title="<?php esc_attr_e('Skip to content', 'inkness'); ?>"><?php _e('Skip to content', 'inkness'); ?></a>
+                                    </div>
 
                                     <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-                                </div>  
+                                </div>                        
                             </nav><!-- #site-navigation -->
                         </div>
+                    </div>
                 </div>
+                <div class="work-time">
+                    <div class="arr-info"></div>
+                    <div class="slide-h"></div>
+                    <div class="info-block">
+                        <p>068 11 08 11</p>
+                        <p>Azi  09:00–22:00</p>
+                        <p>Gh. Asachi 62/6</p>
+                    </div>
+                </div>
+               
             </header><!-- #masthead -->
-
+ </div>
             <?php
             if ((function_exists('of_get_option')) && (of_get_option('slidetitle5', true) != 1)) {
                 if (( of_get_option('slider_enabled') != 0 ) && (is_home())) {
