@@ -1,0 +1,151 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 7, 2015, 8:08:36 PM
+    Author     : Mihai
+*/
+
+@media screen and (max-width: 400px) {
+    .main_logo {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #site-navigation {
+        width: 100%;
+    }
+    #site-navigation .active > a,
+    #site-navigation .current_page_item > a {
+        border-top: solid 4px #ffffff;
+        background: none;
+    }
+    #site-navigation ul {
+        margin-left: 0px;
+    }
+    #site-navigation ul ul {
+        display: none;
+    }
+    #site-navigation li {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #site-navigation li:hover > a {
+        border-top: none;
+        padding-top: 20px;
+    }
+    #site-navigation li:hover ul {
+        display: none !important;
+    }
+    #site-navigation .navbar-default .navbar-collapse {
+        border-color: #00bac4;
+    }
+    .menu-toggle,
+    .main-navigation.toggled .nav-menu {
+        display: block;
+        color: #00bac4;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        top: -8px;
+        width: 100%;
+        float: left;
+    }
+    h1.menu-toggle {
+        width: 100%;
+    }
+    .menu-toggle:before {
+        content: "\f0ca";
+        font-family: "FontAwesome";
+        height: 0;
+        width: 0px;
+        margin-right: 20px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.slide-title {
+        font-size: 18px;
+    }
+    div.slide-description {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .featured-thumb .img-meta .meta-icon {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    li.comment {
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #top-search {
+        text-align: center;
+        margin-top: 10px;
+    }
+    #top-search .search-form {
+        float: none;
+    }
+    h1.site-title,
+    #social-icons {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    #top-bar {
+        padding-bottom: 5px;
+    }
+    div.slide-description {
+        display: none;
+    }
+    div.slide-title {
+        font-size: 12px;
+    }
+    .nivo-caption {
+        max-width: 400px;
+        max-width: 75%;
+        min-width: 200px;
+    }
+    #site-navigation ul.menu,
+    #site--navigation div.menu {
+        display: none;
+    }
+    #site-navigation ul.menu li a,
+    #site--navigation div.menu li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #site-navigation ul.menu li:hover a,
+    #site--navigation div.menu li:hover a {
+        border-bottom: none;
+        padding-bottom: 25px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #top-search input[type=text] {
+        width: 250px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #site-navigation ul.menu {
+        display: block;
+    }
+}
