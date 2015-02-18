@@ -1,15 +1,16 @@
 /*  Author     : Starniciuc Mihai
 */
 @import url(../fonts/font-awesome/css/font-awesome.min.css);
-header.head-site { background: #e1d8cd; /* Old browsers */ background: -moz-linear-gradient(top, #e1d8cd 0%, white 60%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1d8cd), color-stop(60%, white)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #e1d8cd 0%, white 60%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #e1d8cd 0%, white 60%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #e1d8cd 0%, white 60%); /* IE10+ */ background: linear-gradient(to bottom, #e1d8cd 0%, #ffffff 60%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d8cd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */ height: 117px; padding-left: 260px; }
+header.head-site { background: #e1d8cd; /* Old browsers */ background: -moz-linear-gradient(top, #e1d8cd 0%, white 60%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1d8cd), color-stop(60%, white)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #e1d8cd 0%, white 60%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #e1d8cd 0%, white 60%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #e1d8cd 0%, white 60%); /* IE10+ */ background: linear-gradient(to bottom, #e1d8cd 0%, #ffffff 60%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d8cd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */ height: 117px; padding-left: 260px; overflow: hidden; }
 header.head-site .logo-side { position: absolute; top: 0; left: 0; height: 117px; width: 220px; line-height: 117px; text-align: center; }
 header.head-site .logo-side .arr-logo { background: url("../../images/h-bg-logo.png") no-repeat right top; background-size: 100% 100%; position: absolute; right: 0; height: 117px; width: 42px; }
 header.head-site .logo-side .logo-container { background-color: #FF4000; width: 178px; }
 header.head-site .logo-side .logo-container img { height: 80px; }
-header.head-site nav#site-navigation { display: block; display: inline-block; padding-bottom: 0px; border: none; font-family: "Open Sans", Arial, Helvetica, sans-serif; text-transform: uppercase; }
+header.head-site nav#site-navigation { display: block; display: inline-block; padding-bottom: 0px; border: none; font-family: "Open Sans", Arial, Helvetica, sans-serif; text-transform: uppercase; margin-top: 25px; }
 header.head-site nav#site-navigation ul { list-style: none; margin: 0; padding-left: 0; padding-bottom: 0px; }
 header.head-site nav#site-navigation ul li { display: inline-block; line-height: 25px; }
-header.head-site nav#site-navigation ul li a { color: #007399; font-size: 16px; font-weight: bold; font-style: italic; text-decoration: none; border-bottom: 1px solid #B2D5E0; display: inline-block; }
+header.head-site nav#site-navigation ul li a { color: #007399; font-size: 16px; font-weight: bold; font-style: italic; text-decoration: none; border-bottom: 1px solid #B2D5E0; display: inline-block; -moz-transition: all 0.35s; -o-transition: all 0.35s; -webkit-transition: all 0.35s; transition: all 0.35s; }
+header.head-site nav#site-navigation ul li a:hover { color: #FF4000; border-color: #FFC6B2; }
 header.head-site nav#site-navigation ul li:hover > ul { display: block; }
 header.head-site nav#site-navigation ul li:after { content: "/"; color: #F0F0F0; font-size: 25px; padding-right: 15px; padding-left: 15px; display: inline-block; font-weight: normal; }
 header.head-site nav#site-navigation ul li:last-child:after { content: " "; padding: 0; }
@@ -18,7 +19,29 @@ header.head-site nav#site-navigation ul ul a { min-width: 200px; max-width: 255p
 header.head-site nav#site-navigation .caret { display: none; }
 header.head-site .work-time { position: absolute; right: 0; top: 0; height: 117px; }
 header.head-site .work-time .arr-info { background: url("../../images/h-bg-info.png") no-repeat right top; background-size: 100% 100%; position: absolute; left: -42px; height: 117px; width: 42px; }
-header.head-site .work-time .info-block { height: 117px; background-color: #FF4000; color: #FFFFFF; padding: 15px; }
+header.head-site .work-time .info-block { height: 117px; background-color: #FF4000; color: #FFFFFF; padding: 15px; text-align: right; margin-right: -150px; -moz-transition: margin-right 0.35s; -o-transition: margin-right 0.35s; -webkit-transition: margin-right 0.35s; transition: margin-right 0.35s; }
+header.head-site .work-time .info-block .call-numb { font-size: 24px; font-weight: bold; font-style: italic; color: #FFFFFF; }
+header.head-site .work-time .info-block .call-numb:hover { text-decoration: none; }
+header.head-site .work-time .info-block .adress { font-size: 18px; font-style: italic; margin-bottom: 0; color: #FFC6B2; }
+header.head-site .work-time .info-block .str { border-bottom: 1px dashed #FFC6B2; font-weight: bold; font-style: italic; color: #FFFFFF; font-size: 18px; }
+header.head-site .work-time .info-block .info { display: inline-block; float: left; }
+header.head-site .work-time .info-block .hiden-block { width: 150px; height: 100%; display: inline-block; float: left; }
+header.head-site .work-time .info-block .hiden-block p { margin-bottom: 5px; font-size: 16px; font-weight: bold; font-style: italic; }
+header.head-site .work-time .info-block .hiden-block a.show-map { border: 1px solid #FFFFFF; border-radius: 10px; padding: 7px 15px; color: #FFFFFF; font-size: 12px; }
+header.head-site .work-time .info-block .hiden-block a.show-map:hover { text-decoration: none; }
+header.head-site .work-time .info-block:hover { margin-right: 0; }
+header.head-site .top-menu { padding: 0; margin: 0; list-style: none; margin-top: -1px; }
+header.head-site .top-menu li { display: inline-block; margin-right: 20px; line-height: 30px; }
+header.head-site .top-menu li a.price-btn { background: url("../../images/bg-price.png") no-repeat 0 0; display: inline-block; width: 112px; height: 30px; color: #FFFFFF; font-size: 13px; font-weight: bold; font-style: italic; text-align: center; }
+header.head-site .top-menu li a.price-btn:hover { text-decoration: none; background: url("../../images/bg-price-hover.png") no-repeat 0 0; }
+header.head-site .top-menu li a.adress-link { font-size: 14px; color: #007399; font-style: italic; background: url("../../images/contact_blue.png") no-repeat 0 center; padding: 5px; padding-left: 25px; }
+header.head-site .top-menu li a.adress-link:hover { text-decoration: none; color: #FF4000; background: url("../../images/contact.png") no-repeat 0 center; }
+header.head-site .top-menu li a.like { background: url("../../images/facebook_imi-place.png") no-repeat 0 0; width: 72px; height: 20px; display: inline-block; vertical-align: middle; }
+header.head-site .top-menu li .lang-link { padding: 0; margin: 0; }
+header.head-site .top-menu li .lang-link li { display: inline-block; margin-right: 10px; }
+header.head-site .top-menu li .lang-link li a { color: #007399; font-size: 12px; font-style: italic; font-weight: bold; border-bottom: 1px solid #B2D5E0; -moz-transition: all 0.45s; -o-transition: all 0.45s; -webkit-transition: all 0.45s; transition: all 0.45s; }
+header.head-site .top-menu li .lang-link li a:hover { color: #FF4000; border: 0; text-decoration: none; }
+header.head-site .top-menu li .lang-link li.selected a { color: #FF4000; border: 0; }
 
 #parallax-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
 
@@ -35,12 +58,6 @@ header.head-site .work-time .info-block { height: 117px; background-color: #FF40
 .site-description { font-family: "Open Sans", Helvetica, sans-serif; color: #b4b4b4; font-size: 16px; font-weight: 100; text-transform: uppercase; }
 
 .main_logo { max-width: 590px; }
-
-#social-icons { float: right; text-align: right; margin-top: 2px; margin-bottom: 5px; }
-
-.social-icon { color: #999999; font-size: 32px; margin-right: 2px; padding: 0px 2px; position: relative; top: 0px; left: 0px; transition: ease 0.4s all; }
-
-.social-icon:hover { color: #00d2de; text-shadow: 3px 3px 1px #818181; top: -1px; left: -1px; }
 
 a:hover .social-icon { text-decoration: none; }
 
@@ -72,7 +89,7 @@ a:hover, a:focus, a:active { color: #00d2de; }
 
 .nivo-html-caption { display: none; }
 
-.nivocapper { display: inline-block; background: red; background: rgba(0, 0, 0, 0.85); padding: 5px 35px; margin-top: -10px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.nivocapper { display: inline-block; padding: 5px 35px; margin-top: -10px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
 
 div.slide-title { font-size: 36px; display: block; }
 
@@ -314,13 +331,27 @@ article code { background: #14a8b0; color: #000000; }
 
 #comments .comment-metadata { font-weight: bold; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*  Created on : Feb 8, 2015, 11:04:26 AM Author     : Mihai
-*/
+h1 { font-size: 48px; color: #FF4000; font-weight: bold; font-style: italic; }
+
+footer .social-block { background-color: #FF4000; height: 200px; }
+footer .footer-menu { font-family: "Open Sans", Arial, Helvetica, sans-serif; text-transform: uppercase; margin-top: 25px; }
+footer .footer-menu ul { list-style: none; margin: 0; padding-left: 0; padding-bottom: 0px; }
+footer .footer-menu ul li { display: inline-block; line-height: 25px; }
+footer .footer-menu ul li a { color: #007399; font-size: 16px; font-weight: bold; font-style: italic; text-decoration: none; border-bottom: 1px solid #B2D5E0; display: inline-block; -moz-transition: all 0.35s; -o-transition: all 0.35s; -webkit-transition: all 0.35s; transition: all 0.35s; }
+footer .footer-menu ul li a:hover { color: #FF4000; border-color: #FFC6B2; }
+footer .footer-menu ul li:hover > ul { display: block; }
+footer .footer-menu ul li:after { content: "/"; color: #F0F0F0; font-size: 25px; padding-right: 15px; padding-left: 15px; display: inline-block; font-weight: normal; }
+footer .footer-menu ul li:last-child:after { content: " "; padding: 0; }
+footer .footer-menu ul ul { display: none; float: left; position: absolute; top: 5.0em; left: 0; z-index: 99999; background: #eeeeee; text-align: left; border: none; border-top: solid 3px #EFEFEF; padding-top: 0px; box-shadow: 0px 5px 4px -4px #4a4a4a; }
+footer .footer-menu ul ul a { min-width: 200px; max-width: 255px; font-size: 14px; font-weight: normal; color: #555; padding: 8px 20px; }
+footer .footer-menu .caret { display: none; }
+footer .social-icon { color: #FFFFFF; font-size: 52px; margin-right: 10px; position: relative; top: 0px; left: 0px; line-height: 200px; transition: ease 0.4s all; }
+footer .social-icon:hover { color: #FFFFFF; text-shadow: 0px 0px 1px #818181; }
+footer .footer-about { margin-top: 20px; }
+footer .footer-about p { font-size: 13px; color: #636363; }
+footer .footer-about p.company { color: #999999; font-size: 11px; }
+footer .footer-about p.company a { color: #1AB901; font-weight: bold; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates

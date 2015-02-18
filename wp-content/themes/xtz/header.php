@@ -22,7 +22,7 @@
         <div id="parallax-bg"></div>
         <div id="page" class="hfeed site">
             <?php do_action('inkness_before'); ?>
-            <div class="container-fluid">
+    <div class="container-fluid">
             <header id="masthead" role="banner" class="head-site">
                 
                 <div class="logo-side">
@@ -41,18 +41,21 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <ul>
+                        <ul class="top-menu">
                             <li>
-                                Imi place
+                                <a href="#" class="like"></a>
                             </li>
                             <li>
-                                Ro Ru
+                                <ul class="lang-link">
+                                    <li class="selected"><a href="#">Ro</a></li>
+                                    <li><a href="#">Ru</a></li>
+                                </ul>
                             </li>
                             <li>
-                                PRICELIST
+                                <a href="#" class="price-btn">PRICELIST</a>
                             </li>
                             <li>
-                                Adresa noastra
+                                <a href="#" class="adress-link">Adresa noastra</a>
                             </li>
                         </ul>
                     </div>
@@ -75,9 +78,16 @@
                     <div class="arr-info"></div>
                     <div class="slide-h"></div>
                     <div class="info-block">
-                        <p>068 11 08 11</p>
-                        <p>Azi  09:00–22:00</p>
-                        <p>Gh. Asachi 62/6</p>
+                        <div class="info">
+                            <a href="tel:+37368110811" class="call-numb">068 11 08 11</a>
+                            <p class="adress">Azi <i class="fa fa-clock-o"></i> 09:00–22:00</p>
+                            <span class="str">Gh. Asachi 62/6</span>
+                        </div>
+                        <div class="hiden-block">
+                            <p>078 11 08 11</p>
+                            <p>022 60 58 98</p> 
+                            <a href="#" class="show-map">Vezi harta</a>
+                        </div>
                     </div>
                 </div>
                
@@ -117,5 +127,5 @@
                 }
             }
             ?>
-            <div id="content" class="site-content row clearfix clear">
-                <div class="container col-md-12"> 
+            <div id="content">
+                <div class="container-fluid"> 

@@ -9,7 +9,8 @@ header.head-site{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d8cd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
     height: 117px;
     padding-left: 260px;
-
+    overflow: hidden;
+    
     .logo-side{
         position: absolute;
         top: 0;
@@ -45,6 +46,8 @@ header.head-site{
         border: none;
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         text-transform: uppercase;
+        margin-top: 25px;
+
 
         ul{
             list-style: none;
@@ -64,6 +67,12 @@ header.head-site{
                     text-decoration: none;
                     border-bottom: 1px solid #B2D5E0;
                     display: inline-block;
+                    @include transition(all 0.35s);
+
+                    &:hover{
+                        color: #FF4000;
+                        border-color: #FFC6B2;
+                    }
                 }
 
                 &:hover > ul {
@@ -130,12 +139,162 @@ header.head-site{
             height: 117px;
             width: 42px;
         }
-
+        
         .info-block{
             height: 117px;
             background-color: #FF4000;
             color: #FFFFFF;
             padding: 15px;
+            text-align: right;
+            margin-right: -150px;
+            @include transition(margin-right 0.35s);
+            
+            .call-numb{
+                font-size: 24px;
+                font-weight: bold;
+                font-style: italic;
+                color: #FFFFFF;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            .adress{
+                font-size: 18px;
+                font-style: italic;
+                margin-bottom: 0;
+                color: #FFC6B2;
+            }
+
+            .str{
+                border-bottom: 1px dashed #FFC6B2;
+                font-weight: bold;
+                font-style: italic;
+                color: #FFFFFF;
+                font-size: 18px;
+            }
+            
+            .info{
+                display: inline-block;
+                float: left;
+            }
+            
+            .hiden-block{
+                width: 150px;
+                height: 100%;
+                display: inline-block;
+                float: left;
+                
+                p{
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                
+                a.show-map{
+                    border: 1px solid #FFFFFF;
+                    border-radius: 10px;
+                    padding: 7px 15px;
+                    color: #FFFFFF;
+                    font-size: 12px;
+                    
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            &:hover{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .top-menu{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-top: -1px;
+
+        li{
+            display: inline-block;
+            margin-right: 20px;
+            line-height: 30px;
+
+
+            a.price-btn{
+                background: url("../../images/bg-price.png") no-repeat 0 0;
+                display: inline-block;
+                width: 112px;
+                height: 30px;
+                color: #FFFFFF;
+                font-size: 13px;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+
+                &:hover{
+                    text-decoration: none;
+                    background: url("../../images/bg-price-hover.png") no-repeat 0 0;
+                }
+            }
+
+            a.adress-link{
+                font-size: 14px;
+                color: #007399;
+                font-style: italic;
+                background: url("../../images/contact_blue.png") no-repeat 0 center;
+                padding: 5px;
+                padding-left: 25px; 
+
+                &:hover {
+                    text-decoration: none;
+                    color: #FF4000;
+                    background: url("../../images/contact.png") no-repeat 0 center;
+                }
+            }
+
+            a.like{
+                background: url("../../images/facebook_imi-place.png") no-repeat 0 0;
+                width: 72px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .lang-link{
+                padding: 0;
+                margin: 0;
+
+                li{
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    a{
+                        color: #007399;
+                        font-size: 12px;
+                        font-style: italic;
+                        font-weight: bold;
+                        border-bottom: 1px solid #B2D5E0;
+                        @include transition(all 0.45s);
+
+                        &:hover{
+                            color: #FF4000;
+                            border: 0;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &.selected{
+                        a{
+                            color: #FF4000;
+                            border: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
