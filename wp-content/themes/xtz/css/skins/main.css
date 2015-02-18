@@ -62,7 +62,7 @@ a:hover, a:focus, a:active { color: #00d2de; }
 
 .menu-toggle { display: none; cursor: pointer; text-align: center; }
 
-.slider-wrapper { margin: auto; margin-top: 0px; background: rgba(255, 255, 255, 0.8); margin-bottom: 80px; border-top: solid 4px #efefef; padding-top: 0px; border-bottom: none; }
+.slider-wrapper { margin: auto; margin-top: 0px; background: rgba(255, 255, 255, 0.8); margin-bottom: 80px; padding-top: 0px; border-bottom: none; }
 
 .slide-title { font-family: "Open Sans", Arial, Helvetica, sans-serif; color: #ddd; }
 
