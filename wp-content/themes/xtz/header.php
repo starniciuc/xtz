@@ -127,5 +127,5 @@
                 }
             }
             ?>
-            <div id="content">
+            <div id="content" class="site-content row clearfix clear">
                 <div class="container-fluid"> 
