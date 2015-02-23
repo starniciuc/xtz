@@ -19,12 +19,23 @@
     </head>
 
     <body <?php body_class(); ?>>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <div id="parallax-bg"></div>
         <div id="page" class="hfeed site">
             <?php do_action('inkness_before'); ?>
-    <div class="container-fluid">
+    
             <header id="masthead" role="banner" class="head-site">
-                
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="inner-header">
                 <div class="logo-side">
                     <?php if ((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1)) { ?>
                         <div class="logo-container">
@@ -39,11 +50,9 @@
                             }
                             ?>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
                         <ul class="top-menu">
                             <li>
-                                <a href="#" class="like"></a>
+                                <div class="fb-like" data-href="https://www.facebook.com/xtremetrainingzone" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
                             </li>
                             <li>
                                 <ul class="lang-link">
@@ -58,7 +67,7 @@
                                 <a href="#" class="adress-link">Adresa noastra</a>
                             </li>
                         </ul>
-                    </div>
+                    
                     <div class="col-md-12"> 	
                         <div class="default-nav-wrapper ">
                             <nav id="site-navigation" class="main-navigation" role="navigation">
@@ -73,7 +82,7 @@
                             </nav><!-- #site-navigation -->
                         </div>
                     </div>
-                </div>
+                
                 <div class="work-time">
                     <div class="arr-info"></div>
                     <div class="slide-h"></div>
@@ -90,9 +99,11 @@
                         </div>
                     </div>
                 </div>
-               
+                    </div>
+                            </div>
+                </div>
+               </div>
             </header><!-- #masthead -->
- </div>
             <?php
             if ((function_exists('of_get_option')) && (of_get_option('slidetitle5', true) != 1)) {
                 if (( of_get_option('slider_enabled') != 0 ) && (is_home())) {

@@ -22,5 +22,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<div class="fb-comments" data-href="https://www.facebook.com/xtremetrainingzone" data-width="816" data-numposts="10" data-colorscheme="light"></div>
 <?php get_footer(); ?>

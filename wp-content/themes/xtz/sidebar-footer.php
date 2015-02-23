@@ -5,7 +5,7 @@
  * @package Inkness
  */
 ?>
-	<div id="footer-sidebar" class="widget-area col-md-12" role="complementary">
+	<div id="footer-sidebar" class="widget-area" role="complementary">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( is_active_sidebar( 'sidebar-2' ) ) { ?>
 		<div class="footer-column col-md-4"> <?php
@@ -14,7 +14,7 @@
 		}
 			
 		if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
-		<div class="footer-column col-md-4"> <?php
+		<div class=""> <?php
 			dynamic_sidebar( 'sidebar-3'); 
 		?> </div> <?php	
 		}

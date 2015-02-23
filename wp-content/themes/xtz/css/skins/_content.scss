@@ -609,15 +609,7 @@ h1.page-title {
 .pagination ul  > li:last-child  > span {
     border-rigth-width: 1px;
 }
-#colophon {
-    background: #ffffff;
-    padding: 10px;
-    border-top: solid 1px #ddd;
-    border-bottom: solid 4px #ddd;
-    width: auto;
-    margin-left: 0px;
-    margin-right: 0px;
-}
+
 .sep {
     font-size: 8px;
     position: relative;
@@ -707,4 +699,101 @@ h1{
     color: #FF4000;
     font-weight: bold;
     font-style: italic;
+}
+main{
+    .white-left{
+        /*background-color: #FFFFFF;*/
+        color: #FF4000;
+        text-align: right;
+        text-align: left;
+        padding: 50px 0 30px;
+
+        h1{
+            font-size: 36px;
+            font-weight: bold;
+            font-family: $font-open;
+            color: #FF4000;
+        }
+        .col-left{
+            width: 50%;
+            float: left;
+            padding: 15px;
+        }
+        .col-right{
+            width: 50%;
+            float: left;
+            padding: 15px;
+        }
+        .entry-content{
+            font-size: 14px;
+            font-family: $font-open;
+            color: #636363;
+        }
+    }
+
+    .red-right{
+        background-color: #FF4000;
+        color: #FFFFFF;
+        text-align: right;
+        padding: 50px 0 30px;
+
+        h1.entry-title{
+            font-size: 36px;
+            font-weight: bold;
+            font-family: $font-open;
+            color: #FFFFFF;
+        }
+        .entry-content{
+            font-size: 14px;
+            font-family: $font-open;
+            color: #FFFFFF;
+        }
+
+
+        .col-left{
+            width: 50%;
+            float: right;
+            padding: 15px;
+        }
+        .col-right{
+            width: 50%;
+            float: right;
+            padding: 15px;
+        }
+    }
+
+    .image-post-home{
+        img{
+            max-width: 100%;
+            border:6px solid #FFFFFF;
+            @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+        }
+    }
+}
+.slider-wrapper12{
+    margin-top: 80px;
+
+    .bx-wrapper .bx-viewport{
+        box-shadow: none;
+        border: 0;
+        left: 0;
+        background: none;
+        font-family: $font-open;
+        
+        img{
+            border: 6px solid #FFFFFF;
+            @include box-shadow(0 10px 20px rgba(0, 55, 100, 0.3));
+            margin-bottom: 20px;
+        }
+
+        h2{
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+        }
+        p{
+            color: #636363;
+            font-size: 14px;
+        }
+    }
 }

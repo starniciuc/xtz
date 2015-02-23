@@ -3,4 +3,8 @@ $font-open: "Open Sans", serif;
 body {
     background: #f7f7f7;
     font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+}
+body.custom-background {
+    background-color: #F3F7FA !important;
 }

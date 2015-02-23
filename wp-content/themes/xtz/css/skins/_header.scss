@@ -1,24 +1,32 @@
+body{
+    background-color: #F3F7FA;
+}
 header.head-site{
-    background: rgb(225,216,205); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(225,216,205,1) 0%, rgba(255,255,255,1) 60%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(225,216,205,1)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d8cd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    height: 117px;
-    padding-left: 260px;
-    overflow: hidden;
-    
+    background-color: #FF4000;
+    .inner-header{
+        background: rgb(225,216,205); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(225,216,205,1) 0%, rgba(255,255,255,1) 60%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(225,216,205,1)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d8cd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        height: 117px;
+        padding-left: 190px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
     .logo-side{
         position: absolute;
         top: 0;
         left: 0;
         height: 117px;
-        width: 220px;       
+        width: 172px;       
         line-height: 117px;
-        text-align: center;
+        text-align: left;
 
         .arr-logo{
             background: url("../../images/h-bg-logo.png") no-repeat right top;
@@ -31,7 +39,7 @@ header.head-site{
 
         .logo-container{
             background-color: #FF4000;
-            width: 178px;
+            width: 130px;
 
             img{
                 height: 80px;
@@ -130,7 +138,7 @@ header.head-site{
         right: 0;
         top: 0;
         height: 117px;
-        
+
         .arr-info{
             background: url("../../images/h-bg-info.png") no-repeat right top;
             background-size: 100% 100%;
@@ -139,7 +147,7 @@ header.head-site{
             height: 117px;
             width: 42px;
         }
-        
+
         .info-block{
             height: 117px;
             background-color: #FF4000;
@@ -148,7 +156,7 @@ header.head-site{
             text-align: right;
             margin-right: -150px;
             @include transition(margin-right 0.35s);
-            
+
             .call-numb{
                 font-size: 24px;
                 font-weight: bold;
@@ -174,38 +182,38 @@ header.head-site{
                 color: #FFFFFF;
                 font-size: 18px;
             }
-            
+
             .info{
                 display: inline-block;
                 float: left;
             }
-            
+
             .hiden-block{
                 width: 150px;
                 height: 100%;
                 display: inline-block;
                 float: left;
-                
+
                 p{
                     margin-bottom: 5px;
                     font-size: 16px;
                     font-weight: bold;
                     font-style: italic;
                 }
-                
+
                 a.show-map{
                     border: 1px solid #FFFFFF;
                     border-radius: 10px;
                     padding: 7px 15px;
                     color: #FFFFFF;
                     font-size: 12px;
-                    
+
                     &:hover{
                         text-decoration: none;
                     }
                 }
             }
-            
+
             &:hover{
                 margin-right: 0;
             }

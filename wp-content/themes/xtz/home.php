@@ -13,17 +13,22 @@
 
 get_header(); ?>
 
-	<div id="primary-home" class="content-area col-md-12">
-		<main id="main" class="site-main row container" role="main">
-
+	<div id="primary-home" class="content-area">
+		<main id="main" class="site-main" role="main">
+                    
+                    <h1 class="text-center">OFERTE SPECIALE</h1>
+                    
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ $ink_count = 0; $ink_row_count=0 ?>
 			<?php while ( have_posts() ) : the_post(); 
-				if ($ink_count == 0 ) {echo "<div class='row-".$ink_row_count." row'>";}
+                         if ( in_category( '1' ) ) :
+                                if ($ink_count == 0 ) {echo "<div class='row-".$ink_row_count."'>";}
+                                if($ink_count % 2 == 0){echo "<div class='white-left'>";} else {echo "<div class='red-right'>";}
+                                
 			?>
-			
-
+                    
+                            <div class="container">
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
@@ -31,21 +36,24 @@ get_header(); ?>
 					 */
 					get_template_part( 'content', 'home' );
 				?>
-
+                            </div>
+                    
 			<?php 
+                        echo "</div>";
 				if ($ink_count == 2 )
 					{
 						echo "</div>";
-						$ink_count=0;
+						$ink_count++;
 						$ink_row_count++;
 					}
 				else {	
 					$ink_count++;
 				}
-				
+			?>
+                    <?php endif; 
 				endwhile; 
 			?>
-
+                         
 			<?php inkness_pagination(); ?>
 
 		<?php else : ?>
@@ -57,5 +65,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar('footer'); ?>
+<?php get_sidebar('instagram'); ?>
+        
+        
 <?php get_footer(); ?>
