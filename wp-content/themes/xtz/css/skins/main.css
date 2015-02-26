@@ -349,6 +349,9 @@ main .red-right .entry-content { font-size: 14px; font-family: "Open Sans", seri
 main .red-right .col-left { width: 50%; float: right; padding: 15px; }
 main .red-right .col-right { width: 50%; float: right; padding: 15px; }
 main .image-post-home img { max-width: 100%; border: 6px solid #FFFFFF; -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+main .banner img { width: 100%; }
+main .price { text-align: center; margin: 40px 0; }
+main .price img { max-width: 100%; }
 
 .slider-wrapper12 { margin-top: 80px; }
 .slider-wrapper12 .bx-wrapper .bx-viewport { box-shadow: none; border: 0; left: 0; background: none; font-family: "Open Sans", serif; }

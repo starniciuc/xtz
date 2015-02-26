@@ -145,7 +145,7 @@ function optionsframework_menu_settings() {
 
 	$menu = array(
 		'page_title' => __( 'Inkness Theme Options', 'optionsframework'),
-		'menu_title' => __('Inkness Settings', 'optionsframework'),
+		'menu_title' => __('XTZ Settings', 'optionsframework'),
 		'capability' => 'edit_theme_options',
 		'menu_slug' => 'Inkness-options',
 		'callback' => 'optionsframework_page'

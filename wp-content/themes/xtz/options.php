@@ -35,7 +35,7 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => __('Basic Settings', 'inkness'),
 		'type' => 'heading');
-			
+
 	$options[] = array(
 		'name' => __('Site Logo', 'inkness'),
 		'desc' => __('Leave Blank to use text Heading.', 'inkness'),
@@ -49,42 +49,21 @@ function optionsframework_options() {
 		'id' => 'footertext2',
 		'std' => '',
 		'type' => 'text');
-	
+				
 	$options[] = array(
-		'desc' => __('To have more customization options including Analytics, Custom Header/Footer Scripts <a href="http://inkhive.com/product/inkness-plus/" target="_blank">Upgrade to Pro</a> at Just $25.95'),
-		'std' => '',
-		'type' => 'info');
-		
-	//Design Settings
-		
-	$options[] = array(
-		'name' => __('Layout Settings', 'inkness'),
-		'type' => 'heading');	
+		'name' => __('Banner Oferte', 'inkness'),
+		'desc' => __('Top banner for oferte speciale page.', 'inkness'),
+		'id' => 'banner_oferte',
+		'class' => '',
+		'type' => 'upload');	
 	
-	$options[] = array(
-		'name' => "Sidebar Layout",
-		'desc' => "Select Layout for Posts & Pages.",
-		'id' => "sidebar-layout",
-		'std' => "right",
-		'type' => "images",
-		'options' => array(
-			'left' => $imagepath . '2cl.png',
-			'right' => $imagepath . '2cr.png')
-	);
-	
-	$options[] = array(
-		'desc' => __('<a href="http://inkhive.com/product/inkness-plus/" target="_blank">Pro Version</a> supports the option to add custom skins, styles & Layouts. Upgrade at Just $25.95.'),
-		'std' => '',
-		'type' => 'info');
-			
-	
-	$options[] = array(
-		'name' => __('Custom CSS', 'inkness'),
-		'desc' => __('Some Custom Styling for your site. Place any css codes here instead of the style.css file.', 'inkness'),
-		'id' => 'style2',
-		'std' => '',
-		'type' => 'textarea');
-	
+        $options[] = array(
+		'name' => __('Price', 'inkness'),
+		'desc' => __('List of price.', 'inkness'),
+		'id' => 'price',
+		'class' => '',
+		'type' => 'upload');	
+        
 	//SLIDER SETTINGS
 
 	$options[] = array(
@@ -97,11 +76,7 @@ function optionsframework_options() {
 		'id' => 'slider_enabled',
 		'type' => 'checkbox',
 		'std' => '0' );
-		
-	$options[] = array(
-		'desc' => __('In the <a href="http://inkhive.com/product/inkness-plus/" target="_blank">Pro Version (InkNess Plus)</a> there are options to customize slider by choosing form over 16 animation effects, ability to set transition time and speed and more. You Can Also Choose Full-Width/Fixed-Width Slider. Upgrade at Just $25.95'),
-		'std' => '',
-		'type' => 'info');	
+			
 		
 	$options[] = array(
 		'name' => __('Using the Slider', 'inkness'),
@@ -310,55 +285,14 @@ function optionsframework_options() {
 		'std' => '',
 		'class' => 'mini',
 		'type' => 'text');	
-		
-	$options[] = array(
-		'desc' => __('More social Icons are available in the <a href="http://inkhive.com/product/inkness-plus/" target="_blank">Pro Version (InkNess Plus)</a>. Upgrade at Just $25.95'),
-		'std' => '',
-		'type' => 'info');							
+									
 		
 	$options[] = array(
 	'name' => __('Support', 'inkness'),
 	'type' => 'heading');
 	
 	$options[] = array(
-		'desc' => __('Inkness WordPress theme has been Designed and Created by <a href="http://InkHive.com" target="_blank">Rohit Tripathi</a>. For any Queries or help regarding this theme, <a href="http://wordpress.org/support/theme/inkness/" target="_blank">use the support forums.</a>', 'inkness'),
+		'desc' => __('Inkness WordPress theme has been Created by <a href="http://starniciuc.com" target="_blank">Starniciuc Mihai</a>.', 'inkness'),
 		'type' => 'info');		
-		
-	 $options[] = array(
-		'desc' => __('<a href="http://twitter.com/rohitinked" target="_blank">Follow Me on Twitter</a> to know about my upcoming themes.', 'inkness'),
-		'type' => 'info');
-		
-	$options[] = array(
-		'name' => __('Live Demo Blog', 'inkness'),
-		'desc' => __('For your convenience, we have created a <a href="http://demo.inkhive.com/inkness/" target="_blank">Live Demo Blog</a> of the theme Inkness. You can take a look at and find out how your site would look once complete.', 'inkness'),
-		'type' => 'info');		
-		
-	$options[] = array(
-		'desc' => __('We Offer Dedicated Personal Support to all our <a href="http://inkhive.com/product/inkness-plus/" target="_blank">Pro Version Customers</a>. Upgrade at Just $25.95'),
-		'std' => '',
-		'type' => 'info');			
-	
-	$options[] = array(
-		'name' => __('Regenerating Post Thumbnails', 'inkness'),
-		'desc' => __('If you are using inkness Theme on a New Wordpress Installation, then you can skip this section.<br />But if you have just switched to this theme from some other theme, then you are requested regenerate all the post thumbnails. It will fix all the issues you are facing with distorted & ugly homepage thumbnail Images. ', 'inkness'),
-		'type' => 'info');	
-		
-	$options[] = array(
-		'desc' => __('To Regenerate all Thumbnail images, Install and Activate the <a href="http://wordpress.org/plugins/regenerate-thumbnails/" target="_blank">Regenerate Thumbnails</a> WP Plugin. Then from <strong>Tools &gt; Regen. Thumbnails</strong>, re-create thumbnails for all your existing images. And your blog will look even more stylish with Inkness theme.<br /> ', 'inkness'),
-		'type' => 'info');	
-		
-			
-	$options[] = array(
-		'desc' => __('<strong>Note:</strong> Regenerating the thumbnails, will not affect your original images. It will just generate a separate image file for those images.', 'inkness'),
-		'type' => 'info');	
-		
-	
-	$options[] = array(
-		'name' => __('Theme Credits', 'inkness'),
-		'desc' => __('Check this if you want to you do not want to give us credit in your site footer.', 'inkness'),
-		'id' => 'credit1',
-		'std' => '0',
-		'type' => 'checkbox');	
-
 	return $options;
 }

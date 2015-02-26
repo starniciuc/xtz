@@ -54,7 +54,7 @@ get_header(); ?>
 				endwhile; 
 			?>
                          
-			<?php inkness_pagination(); ?>
+			<?php //inkness_pagination(); ?>
 
 		<?php else : ?>
 

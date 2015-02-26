@@ -12,56 +12,70 @@
  */
 
 get_header(); ?>
+ 
+<?php
+    $id_cat =  the_category_ID($echo=false);
+        if($id_cat == 1 || $id_cat == 4 ):
+            if ( have_posts() ) : 
+            ?>
 
-	<div id="primary-home" class="content-area col-md-12">
-		<main id="main" class="site-main row container" role="main">
-		<h1 class="page-title cat-page-title">
-					<?php
-						if ( is_category() ) :
-							single_cat_title();
-							endif;
-							?>
-		</h1>
-		<?php if ( have_posts() ) : ?>
+              <div id="primary-home" class="content-area">
+                <main id="main" class="site-main" role="main">
+                  
+                         <?php if ((of_get_option('banner_oferte', true) != "") && (of_get_option('banner_oferte', true) != 1)) { 
+                             $img = of_get_option('banner_oferte');
+                             echo "<div class='banner'><img src='$img'></div>";
+                            }
+                            ?>
+                    
+                        <?php $ink_count = 0; ?>
+                            <?php while ( have_posts() ) : the_post(); 
+                                if($ink_count % 2 == 0){echo "<div class='white-left'>";} else {echo "<div class='red-right'>";}
+                            ?>
+                                 <div class="container">
+                            <?php
+                                 get_template_part( 'content', 'home' );
+                            ?>
+                                 </div>
+                    <?php 
+                    echo "</div>";
+                    $ink_count++;
+                    endwhile; 
+                    ?>
+              
+            <?php else : ?>
 
-			<?php /* Start the Loop */ $ink_count = 0; $ink_row_count=0 ?>
-			<?php while ( have_posts() ) : the_post(); 
-				if ($ink_count == 0 ) {echo "<div class='row-".$ink_row_count." row'>";}
-			?>
-			
+                    <?php get_template_part( 'no-results', 'index' ); ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', 'home' );
-				?>
+            <?php endif; ?>
+                    
+                  <?php if ((of_get_option('price', true) != "") && (of_get_option('price', true) != 1)) { 
+                             $img = of_get_option('price');
+                             echo "<div class='container'><div class='row'><div class='col-sm-12'>";
+                             echo "<div class='price'><img src='$img'></div>";
+                             echo "</div></div></div>";
+                            }
+                    ?>
+                </main><!-- #main -->
+            </div><!-- #primary -->
+                    
+<?php endif; ?>
+            
+<?php if($id_cat == 3):?>
+            <div id="primary-home" class="content-area">
+                <main id="main" class="site-main" role="main">
+                    <div class="container">
+                        <h1 class="text-center"><?php if ( is_category() ) : single_cat_title(); endif; ?></h1>
+                        <?php while ( have_posts() ) : the_post(); 
 
-			<?php 
-				if ($ink_count == 2 )
-					{
-						echo "</div>";
-						$ink_count=0;
-						$ink_row_count++;
-					}
-				else {	
-					$ink_count++;
-				}
-				
-				endwhile; 
-			?>
+                                     get_template_part( 'content', 'home' );
 
-			<?php inkness_pagination(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'no-results', 'index' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar('footer'); ?>
-<?php get_footer(); ?>
+                                endwhile; 
+                        ?>
+                    </div>
+                </main><!-- #main -->
+            </div><!-- #primary --> 
+<?php  endif; ?>
+            
+<?php //get_sidebar('footer'); ?>
+<?php get_footer('fb'); ?>

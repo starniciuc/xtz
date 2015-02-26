@@ -769,6 +769,20 @@ main{
             @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
         }
     }
+    
+    .banner{
+        img{
+            width: 100%;
+        }
+    }
+    .price{
+        text-align: center;
+        margin: 40px 0;
+        
+        img{
+            max-width: 100%;
+        }
+    }
 }
 .slider-wrapper12{
     margin-top: 80px;

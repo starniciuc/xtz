@@ -61,10 +61,10 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="price-btn">PRICELIST</a>
+                                <a href="<?php echo get_page_link(92); ?>" class="price-btn">PRICELIST</a>
                             </li>
                             <li>
-                                <a href="#" class="adress-link">Adresa noastra</a>
+                                <a href="<?php echo get_page_link(18); ?>" class="adress-link">Adresa noastra</a>
                             </li>
                         </ul>
                     
@@ -138,5 +138,5 @@
                 }
             }
             ?>
-            <div id="content" class="site-content row clearfix clear">
+            <div class="site-content clearfix clear">
                 <div class="container-fluid"> 
