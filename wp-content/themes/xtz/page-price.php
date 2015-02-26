@@ -1,23 +1,31 @@
 <?php
 /**
- * Template Name: Testimoniale
+ * Template Name: Price
  *
- * @package Inkness
  */
 
 get_header(); ?>
 
-        
-		<main id="main" class="site-main" role="main">
+    <main id="main" class="site-main" role="main">
+        <div class="container">
+            <div class='row'>
+                <div class="col-sm-12">
+                    <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php 
-                           while ( $the_query->have_posts() ) :
-                                $the_query->the_post();
-                                echo '<li>' . get_the_title() . '</li>';
-                            endwhile;
-                        ?>
+                            <?php get_template_part( 'content', 'page' ); ?>
 
-		</main><!-- #main -->
+                    <?php endwhile; // end of the loop. ?>
+                </div>
+            </div>
+        </div><!-- #primary -->
+         <?php if ((of_get_option('price', true) != "") && (of_get_option('price', true) != 1)) { 
+                             $img = of_get_option('price');
+                             echo "<div class='container'><div class='row'><div class='col-sm-12'>";
+                             echo "<div class='price'><img src='$img'></div>";
+                             echo "</div></div></div>";
+                            }
+                    ?>
+    </main><!-- #main -->
 	
         
 	<?php
@@ -56,4 +64,4 @@ get_header(); ?>
 			}
 		}
 		?>
-<?php get_footer(); ?>
+<?php get_footer("fb"); ?>
