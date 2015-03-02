@@ -9,35 +9,8 @@
 ?>
 	</div>
 	</div><!-- #content -->
-        <div class="container">
-            <div class="slider-wrapper12">
-                <div id="slider2">
-                    
-                         <!-- Start the Loop. -->
- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- 	<?php if ( in_category( '3' ) ) : ?>
-                <div class="item">
-                     <div class="col-sm-4">
-                         <?php 
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail();
-                            } 
-                        ?>
-                    </div>
-                     <div class="col-sm-8">
-                            <h2><?php the_title(); ?></h2>
-                            <p><?php the_content(); ?></p>
-                    </div>
-                </div>
-        <?php endif; ?>
-    <?php endwhile; else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
- <?php endif; ?>
-                </div>
-            </div>
-        </div>
         
-        <script>jQuery(window).load(function() { jQuery('#slider2').bxSlider(); });</script>
+       <?php get_sidebar("testimoniale"); ?>
         
         <div class="container">
             <div class="row">

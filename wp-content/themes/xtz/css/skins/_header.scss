@@ -1,8 +1,9 @@
 body{
-    background-color: #F3F7FA;
+    //background-color: #F3F7FA;
 }
 header.head-site{
     background-color: #FF4000;
+
     .inner-header{
         background: rgb(225,216,205); /* Old browsers */
         background: -moz-linear-gradient(top, rgba(225,216,205,1) 0%, rgba(255,255,255,1) 60%); /* FF3.6+ */
@@ -203,13 +204,18 @@ header.head-site{
 
                 a.show-map{
                     border: 1px solid #FFFFFF;
-                    border-radius: 10px;
-                    padding: 7px 15px;
+                    border-radius: 14px;
+                    padding: 4px 12px;
                     color: #FFFFFF;
+                    margin-top: 3px;
                     font-size: 12px;
-
+                    display: inline-block;
+                    @include transition(all 0.35s);
+                    
                     &:hover{
                         text-decoration: none;
+                        background-color: #FFFFFF;
+                        color: #FF4000;
                     }
                 }
             }

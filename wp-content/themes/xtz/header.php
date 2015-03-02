@@ -26,7 +26,9 @@
           js = d.createElement(s); js.id = id;
           js.src = "//connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v2.0";
           fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
         <div id="parallax-bg"></div>
         <div id="page" class="hfeed site">
             <?php do_action('inkness_before'); ?>
@@ -56,6 +58,7 @@
                             </li>
                             <li>
                                 <ul class="lang-link">
+                                    <?php // if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
                                     <li class="selected"><a href="#">Ro</a></li>
                                     <li><a href="#">Ru</a></li>
                                 </ul>
@@ -126,9 +129,11 @@
                         for ($i = 1; $i < 6; $i++) {
                             $caption = ((of_get_option('slidetitle' . $i, true) == "") ? "" : "#caption_" . $i);
                             if ($caption != "") {
-                                echo "<div id='caption_" . $i . "' class='nivo-html-caption'><div class='nivocapper'>";
-                                echo "<a href='" . esc_url(of_get_option('slideurl' . $i, true)) . "'><div class='slide-title'>" . of_get_option('slidetitle' . $i, true) . "</div></a>";
+                                echo "<div id='caption_" . $i . "' class='nivo-html-caption'>"
+                                        . "<div class='nivocapper'>";
+                                echo "<div class='slide-title'>" . of_get_option('slidetitle' . $i, true) . "</div>";
                                 echo "<div class='slide-description'>" . of_get_option('slidedesc' . $i, true) . "</div>";
+                                echo "<a href='" . esc_url(of_get_option('slideurl' . $i, true)) . "' class='btn btn-slide'>Citește mai mult</a>";
                                 echo "</div></div>";
                             }
                         }

@@ -18,12 +18,12 @@ get_header(); ?>
                 </div>
             </div>
         </div><!-- #primary -->
-         <?php if ((of_get_option('price', true) != "") && (of_get_option('price', true) != 1)) { 
+         <?php /*if ((of_get_option('price', true) != "") && (of_get_option('price', true) != 1)) { 
                              $img = of_get_option('price');
                              echo "<div class='container'><div class='row'><div class='col-sm-12'>";
                              echo "<div class='price'><img src='$img'></div>";
                              echo "</div></div></div>";
-                            }
+                            }*/
                     ?>
     </main><!-- #main -->
 	
@@ -51,10 +51,12 @@ get_header(); ?>
     				$caption = ((of_get_option('slidetitle'.$i, true)=="")?"":"#caption_".$i);
     				if ($caption != "")
     				{
-	    				echo "<div id='caption_".$i."' class='nivo-html-caption'>";
-	    				echo "<a href='".of_get_option('slideurl'.$i, true)."'><div class='slide-title'>".of_get_option('slidetitle'.$i, true)."</div></a>";
-	    				echo "<div class='slide-description'>".of_get_option('slidedesc'.$i, true)."</div>";
-	    				echo "</div>";
+                                    echo "<div id='caption_" . $i . "' class='nivo-html-caption'>"
+                                        . "<div class='nivocapper'>";
+                                    echo "<div class='slide-title'>" . of_get_option('slidetitle' . $i, true) . "</div>";
+                                    echo "<div class='slide-description'>" . of_get_option('slidedesc' . $i, true) . "</div>";
+                                    echo "<a href='" . esc_url(of_get_option('slideurl' . $i, true)) . "' class='btn btn-slide'>Citește mai mult</a>";
+                                    echo "</div></div>";
     				}
     			}	
     	    

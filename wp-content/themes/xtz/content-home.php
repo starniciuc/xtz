@@ -20,7 +20,7 @@
                     <?php the_excerpt(); ?>
                 </div><!-- .entry-content -->
             <?php endif; ?>
-            <a href="<?php the_permalink(); ?>" rel="bookmark">more</a>
+            <a href="<?php the_permalink(); ?>" rel="bookmark" class="btn btn-more-post">Citește mai mult</a>
         </div>
     <div class="clearfix"></div>
 </article><!-- #post-## -->
