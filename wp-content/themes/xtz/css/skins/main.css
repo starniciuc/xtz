@@ -404,6 +404,9 @@ main .price img { max-width: 100%; }
 .block-dot a { font-size: 18px; color: #338FAD; border-bottom: 1px solid #B2D5E0; }
 .block-dot a:hover { text-decoration: none; border-bottom: 0; }
 
+.testimonials-widget p { color: #000000; font-size: 14px; font-family: "Open Sans", serif; }
+.testimonials-widget img { border: 6px solid #FFFFFF; -moz-box-shadow: 0 10px 20px rgba(0, 55, 100, 0.3); -webkit-box-shadow: 0 10px 20px rgba(0, 55, 100, 0.3); box-shadow: 0 10px 20px rgba(0, 55, 100, 0.3); width: 100%; }
+
 footer .social-block { background-color: #FF4000; height: 200px; }
 footer .footer-menu { font-family: "Open Sans", Arial, Helvetica, sans-serif; text-transform: uppercase; margin-top: 25px; }
 footer .footer-menu ul { list-style: none; margin: 0; padding-left: 0; padding-bottom: 0px; }

@@ -1040,3 +1040,15 @@ main{
         }
     }
 }
+.testimonials-widget{
+    p{
+        color: #000000;
+        font-size: 14px;
+        font-family: $font-open;
+    }
+    img{
+            border: 6px solid #FFFFFF;
+            @include box-shadow(0 10px 20px rgba(0, 55, 100, 0.3));
+            width: 100%;
+        }
+}
