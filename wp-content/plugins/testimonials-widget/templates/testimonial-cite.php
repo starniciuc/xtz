@@ -68,7 +68,7 @@ if ( empty( $cite ) ) {
 
 if ( ! $use_quote_tag ) {
 	?>
-	<div class="credit"><?php echo $cite; ?></div>
+	<div class="name-testimonial"><?php echo $cite; ?></div>
 	<?php
 } else {
 	?>

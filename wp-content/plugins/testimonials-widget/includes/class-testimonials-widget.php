@@ -466,7 +466,7 @@ class Testimonials_Widget extends Aihrus_Common {
 				$email = get_post_meta( $post_id, 'testimonials-widget-email', true );
 
 				if ( has_post_thumbnail( $post_id ) ) {
-					$result = get_the_post_thumbnail( $post_id, 'thumbnail' );
+					$result = get_the_post_thumbnail( $post_id ,'full');
 				} elseif ( is_email( $email ) ) {
 					$result = get_avatar( $email );
 				} else {
@@ -834,9 +834,9 @@ jQuery(document).ready(function() {
 		auto: {$auto},
 		{$autoControls}
 		autoHover: true,
-		controls: false,
+		controls: true,
 		mode: '{$transition_mode}',
-		pager: false,
+		pager: true,
 		pause: {$pause},
 		{$video},
 		slideMargin: 2,
@@ -903,8 +903,8 @@ EOF;
 
 		$html = $div_open
 			. $pre_paging
-			. $testimonial_content
-			. $post_paging
+                        . $post_paging
+			. $testimonial_content			
 			. $div_close;
 
 		$html = apply_filters( 'tw_get_testimonials_html', $html, $testimonials, $atts, $is_list, $widget_number, $div_open, $pre_paging, $testimonial_content, $post_paging, $div_close );
@@ -963,8 +963,8 @@ EOF;
 
 		$html = $div_open
 			. $image
-			. $content
 			. $cite
+			. $content
 			. $extra
 			. $bottom_text
 			. $div_close;
@@ -1268,7 +1268,7 @@ EOF;
 
 		wp_reset_postdata();
 
-		$image_size = apply_filters( 'tw_image_size', 'thumbnail' );
+		$image_size = apply_filters( 'tw_image_size', 'full' );
 		if ( ! is_array( $image_size ) ) {
 			global $_wp_additional_image_sizes;
 			if ( ! empty( $_wp_additional_image_sizes[ $image_size ] ) ) {

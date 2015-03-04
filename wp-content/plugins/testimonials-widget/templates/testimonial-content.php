@@ -24,7 +24,7 @@ if ( $do_content ) {
 
 	if ( ! $use_quote_tag ) {
 		?>
-		<blockquote><?php echo $content; ?></blockquote>
+		<?php echo $content; ?>
 		<?php
 	} else {
 		?>
