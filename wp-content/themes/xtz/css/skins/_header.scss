@@ -42,6 +42,8 @@ header.head-site{
         }
 
         &:hover{
+			cursor: pointer;
+			
             .logo-container{
                 background: #ff4000; /* Old browsers */
                 background: -moz-linear-gradient(left,  #ff4000 0%, #ff6231 100%); /* FF3.6+ */
@@ -55,6 +57,7 @@ header.head-site{
             }
             .arr-logo{
                 background: url("../../images/h-bg-logo-h.png") no-repeat right top;
+				background-size: 100% 100%;
             }
         }
     }

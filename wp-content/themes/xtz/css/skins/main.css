@@ -13,8 +13,9 @@ header.head-site .logo-side { position: absolute; top: 0; left: 0; height: 117px
 header.head-site .logo-side .arr-logo { background: url("../../images/h-bg-logo.png") no-repeat right top; background-size: 100% 100%; position: absolute; right: 0; height: 117px; width: 42px; }
 header.head-site .logo-side .logo-container { background-color: #FF4000; width: 130px; }
 header.head-site .logo-side .logo-container img { height: 80px; }
+header.head-site .logo-side:hover { cursor: pointer; }
 header.head-site .logo-side:hover .logo-container { background: #ff4000; /* Old browsers */ background: -moz-linear-gradient(left, #ff4000 0%, #ff6231 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff4000), color-stop(100%, #ff6231)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(left, #ff4000 0%, #ff6231 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(left, #ff4000 0%, #ff6231 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(left, #ff4000 0%, #ff6231 100%); /* IE10+ */ background: linear-gradient(to right, #ff4000 0%, #ff6231 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4000', endColorstr='#ff6231',GradientType=1 ); /* IE6-9 */ }
-header.head-site .logo-side:hover .arr-logo { background: url("../../images/h-bg-logo-h.png") no-repeat right top; }
+header.head-site .logo-side:hover .arr-logo { background: url("../../images/h-bg-logo-h.png") no-repeat right top; background-size: 100% 100%; }
 header.head-site nav#site-navigation { display: block; display: inline-block; padding-bottom: 0px; border: none; font-family: "Open Sans", Arial, Helvetica, sans-serif; text-transform: uppercase; margin-top: 25px; }
 header.head-site nav#site-navigation ul { list-style: none; margin: 0; padding-left: 0; padding-bottom: 0px; }
 header.head-site nav#site-navigation ul li { display: inline-block; line-height: 25px; }
