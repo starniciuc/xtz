@@ -5,14 +5,8 @@ header.head-site{
     background-color: #FF4000;
 
     .inner-header{
-        background: rgb(225,216,205); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(225,216,205,1) 0%, rgba(255,255,255,1) 60%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(225,216,205,1)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* IE10+ */
-        background: linear-gradient(to bottom, rgba(225,216,205,1) 0%,rgba(255,255,255,1) 60%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d8cd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        background: #FFFFFF; /* Old browsers */
+
         height: 117px;
         padding-left: 190px;
         overflow: hidden;
@@ -44,6 +38,23 @@ header.head-site{
 
             img{
                 height: 80px;
+            }
+        }
+
+        &:hover{
+            .logo-container{
+                background: #ff4000; /* Old browsers */
+                background: -moz-linear-gradient(left,  #ff4000 0%, #ff6231 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff4000), color-stop(100%,#ff6231)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(left,  #ff4000 0%,#ff6231 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(left,  #ff4000 0%,#ff6231 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(left,  #ff4000 0%,#ff6231 100%); /* IE10+ */
+                background: linear-gradient(to right,  #ff4000 0%,#ff6231 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4000', endColorstr='#ff6231',GradientType=1 ); /* IE6-9 */
+
+            }
+            .arr-logo{
+                background: url("../../images/h-bg-logo-h.png") no-repeat right top;
             }
         }
     }
@@ -211,7 +222,7 @@ header.head-site{
                     font-size: 12px;
                     display: inline-block;
                     @include transition(all 0.35s);
-                    
+
                     &:hover{
                         text-decoration: none;
                         background-color: #FFFFFF;
