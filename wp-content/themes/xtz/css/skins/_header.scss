@@ -118,6 +118,13 @@ header.head-site{
                         padding: 0;
                     }
                 }
+                
+                &.current-menu-item{
+                    a{
+                        color: #000000;
+                        border: 0;
+                    }
+                }
             }
             ul {
                 display: none;

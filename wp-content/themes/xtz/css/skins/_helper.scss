@@ -5,8 +5,8 @@ body {
     font-family: "Open Sans", sans-serif;
     overflow: hidden;
 }
-h1{
-    font-family: "Open Sans", sans-serif;
+h1, h2, h3, h4, h5 ,h6{
+    font-family: "Open Sans", sans-serif !important;
 }
 body.custom-background {
     //background-color: #F3F7FA !important;

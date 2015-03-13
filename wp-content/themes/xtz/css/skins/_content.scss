@@ -1024,9 +1024,12 @@ main{
         text-align: center;
 
         span{
-            height: 180px;
+            height: 195px;
             display: inline-block;
             vertical-align: middle;
+        }
+        i{
+          margin-left: -15px;  
         }
     }
     a{
@@ -1074,7 +1077,7 @@ main{
         margin-right: 25px;
         margin-left: 10px;
         padding-bottom: 15px;
-        
+
         img{
             border: 6px solid #FFFFFF;
             @include box-shadow(0 10px 20px rgba(0, 55, 100, 0.3));
@@ -1115,7 +1118,7 @@ main{
         }
         .bx-prev{
             left: 0;
-            
+
             &:hover{
                 background-position: 0px -55px; 
                 height: 57px;
@@ -1167,4 +1170,86 @@ main{
 
 .widget{
     margin-bottom: 0;
+}
+#cboxContent, #cboxLoadedContent, #cboxBottomCenter{
+    background: none !important;
+}
+#cboxTitle{
+    display: none !important;
+}
+#cboxClose{
+    bottom: auto;
+    top: -25px;
+    background: none !important;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    color: #FFFFFF;
+    font-size: 20px;
+    text-indent: 0 !important;
+    box-shadow: none !important;
+    &:before{
+        content: "\f00d";
+    }
+
+    &:hover{
+        color: #FF4000;
+    }
+}
+colorbox, #cboxOverlay, #cboxWrapper{
+    overflow: visible !important;
+}
+#cboxNext, #cboxPrevious{
+    position: absolute !important;
+    top: 50% !important;
+    display:block !important;
+    width:120px !important;
+    height:120px !important;
+    background:none !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    text-indent: -9999px !important;
+    background-position: -30px 0 !important;
+    box-shadow: none !important;
+    right: -80px !important;
+    margin-top: -60px !important;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    border-radius: 60px;
+    color: #CCCCCC;
+    font-size: 60px;
+    text-indent: 0 !important;
+    box-shadow: none !important;
+    z-index: -1 !important;
+    
+    &:before{
+        content: "\f105";
+    }
+    &:hover{
+      color: #FFFFFF;
+      background-color: #FF4000 !important;
+    }
+}
+
+#cboxPrevious{
+    right: auto !important;
+    left: -80px !important;
+    
+    &:before{
+        content: "\f104";
+    }
+}
+#cboxSlideshow{
+    display: none !important;
+}
+#cboxLoadedContent{
+    padding: 0 !important;
+    @include box-shadow(0 0 30px rgba(0, 0, 0, 1));
 }

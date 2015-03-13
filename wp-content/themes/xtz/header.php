@@ -10,7 +10,7 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
         <title><?php wp_title('|', true, 'right'); ?></title>
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -92,7 +92,7 @@
                     <div class="info-block">
                         <div class="info">
                             <a href="tel:+37368110811" class="call-numb">068 11 08 11</a>
-                            <p class="adress">Azi <i class="fa fa-clock-o"></i> 09:00–22:00</p>
+                            <p class="adress">Azi <i class="fa fa-clock-o"></i> <?php if((date("N") == 7) || (date("N") == 6)) echo "10:00-19:00"; else echo "07:00-24:00"; ?></p>
                             <span class="str">Gh. Asachi 62/6</span>
                         </div>
                         <div class="hiden-block">
