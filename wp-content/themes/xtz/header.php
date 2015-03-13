@@ -58,9 +58,9 @@
                             </li>
                             <li>
                                 <ul class="lang-link">
-                                    <?php // if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
-                                    <li class="selected"><a href="#">Ro</a></li>
-                                    <li><a href="#">Ru</a></li>
+                                    <?php if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
+<!--                                    <li class="selected"><a href="#">Ro</a></li>
+                                    <li><a href="#">Ru</a></li>-->
                                 </ul>
                             </li>
                             <li>

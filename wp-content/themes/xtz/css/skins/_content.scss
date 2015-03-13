@@ -1071,7 +1071,9 @@ main{
         padding-bottom: 15px;
     }
 }
-.Testimonials_Widget_Slider_Widget{
+.testimonial-slider{
+    background-color: #F3F7FA;
+    padding: 60px 0;
     .image{
         float: left !important;
         margin-right: 25px;
@@ -1163,10 +1165,7 @@ main{
     }
 }
 
-.testimonial-slider{
-    background-color: #F3F7FA;
-    padding: 60px 0;
-}
+
 
 .widget{
     margin-bottom: 0;
