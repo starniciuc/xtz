@@ -206,6 +206,156 @@ function optionsframework_options() {
 		'desc' => __('Url', 'inkness'),
 		'id' => 'slideurl5',
 		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 6', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide6',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle6',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc6',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl6',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 7', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide7',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle7',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc7',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl7',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 8', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide8',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle8',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc8',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl8',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 9', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide9',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle9',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc9',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl9',
+		'std' => '',
+		'type' => 'text');	
+        
+	$options[] = array(
+		'name' => __('Slider Image 10', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide10',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle10',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc10',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl10',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 11', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide11',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle11',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc11',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl11',
+		'std' => '',
 		'type' => 'text');	
 			
 	//Social Settings
