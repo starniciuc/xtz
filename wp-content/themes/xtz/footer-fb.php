@@ -21,7 +21,7 @@
             </div>
         </div>
         
-        <?php get_sidebar("testimoniale"); ?>
+        <?php if(get_the_ID() != 125) get_sidebar("testimoniale"); ?>
         
 	<footer id="colophon" class="site-footer row" role="contentinfo">
         <div class="container-fluid">
