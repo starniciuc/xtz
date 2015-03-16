@@ -88,7 +88,7 @@
                     <div class="info-block">
                         <div class="info">
                             <a href="tel:+37368110811" class="call-numb">068 11 08 11</a>
-                            <p class="adress">Azi <i class="fa fa-clock-o"></i> <?php if((date("N") == 7) || (date("N") == 6)) echo "10:00-19:00"; else echo "07:00-24:00"; ?></p>
+                            <p class="adress"><?php if(((date("G") <= 19) && (date("G") >= 10) && (date("N") == 7) || (date("N") == 6)) || ((date("G") <= 24) && (date("G") >= 7) && (date("N") != 7) && (date("N") != 6))) echo "Azi"; else echo "Mîine";?> <i class="fa fa-clock-o"></i> <?php if((date("N") == 7) || (date("N") == 6)) echo "10:00-19:00"; else echo "07:00-24:00"; ?></p>
                             <a href="http://xtz.saga.md/?page_id=18#harta" class="str">Gh. Asachi 62/6</a>
                         </div>
                         <div class="hiden-block">
