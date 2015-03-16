@@ -57,11 +57,7 @@
                                 <div class="fb-like" data-href="https://www.facebook.com/xtremetrainingzone" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
                             </li>
                             <li>
-                                <ul class="lang-link">
-                                    <?php if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
-<!--                                    <li class="selected"><a href="#">Ro</a></li>
-                                    <li><a href="#">Ru</a></li>-->
-                                </ul>
+                                <?php if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
                             </li>
                             <li>
                                 <a href="<?php echo get_page_link(92); ?>" class="price-btn">PRICELIST</a>

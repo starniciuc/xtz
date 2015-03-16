@@ -307,12 +307,17 @@ header.head-site{
                     display: inline-block;
                     margin-right: 10px;
 
-                    a{
+                    button{
                         color: #007399;
-                        font-size: 12px;
+                        font-size: 13px;
                         font-style: italic;
                         font-weight: bold;
                         border-bottom: 1px solid #B2D5E0;
+                        background: none;
+                        border: 0;
+                        padding: 0;
+                        margin: 0;
+                        box-shadow: none;
                         @include transition(all 0.45s);
 
                         &:hover{
@@ -323,7 +328,7 @@ header.head-site{
                     }
 
                     &.selected{
-                        a{
+                        button{
                             color: #FF4000;
                             border: 0;
                         }

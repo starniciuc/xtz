@@ -820,6 +820,21 @@ if ( ! function_exists( 'mltlngg_get_switcher_block' ) ) {
 					}
 				$switcher .= '</form>';
 				break;
+                        case 'abr-lang':
+                                $switcher .= '<form name="mltlngg_change_language" method="post" action="">';
+                                $switcher .= "<ul class='lang-link'>";
+					foreach ( $mltlngg_enabled_languages as $mltlngg_one_lang ) {
+                                                $selected = ( strtolower($mltlngg_one_lang['locale']) == strtolower($mltlngg_current_language) ) ? 'class="selected"' : '';
+                                                if($mltlngg_one_lang['locale'] == "ro_RO"){
+                                                    $name_lang = "Ro";
+                                                }else{
+                                                    $name_lang = "Ru";
+                                                }
+						$switcher .= '<li '.$selected.'><button name="mltlngg_change_display_lang" value="' . $mltlngg_one_lang['locale'] . '" title="' . $mltlngg_one_lang['name'] . '">'.$name_lang.'</button></li>';
+					}
+                                $switcher .= "</ul>";
+				$switcher .= '</form>';
+				break;
 		}
 		$switcher .= '</div>';
 		return $switcher;
@@ -1084,6 +1099,15 @@ if ( ! function_exists( 'mltlngg_settings_tab' ) ) {
 								<label style="float: left">
 									<input name="mltlngg_language_switcher" type="radio" value="flags-icons" <?php if ( $mltlngg_options['language_switcher'] == 'flags-icons' ) echo 'checked'; ?> /> 
 									<?php _e( 'Flag icons', 'multilanguage' ); ?>
+								</label>
+								<div class="mltlngg-help-box">
+									<div class="mltlngg-hidden-help-text"><img title="" src="<?php echo plugins_url( 'images/tooltip_flags_icons.png', __FILE__ ); ?>" alt="" /></div>
+								</div>
+							</div>
+							<div style="clear: both;">
+								<label style="float: left">
+									<input name="mltlngg_language_switcher" type="radio" value="abr-lang" <?php if ( $mltlngg_options['language_switcher'] == 'abr-lang' ) echo 'checked'; ?> /> 
+									<?php _e( 'Abr Lang', 'multilanguage' ); ?>
 								</label>
 								<div class="mltlngg-help-box">
 									<div class="mltlngg-hidden-help-text"><img title="" src="<?php echo plugins_url( 'images/tooltip_flags_icons.png', __FILE__ ); ?>" alt="" /></div>
