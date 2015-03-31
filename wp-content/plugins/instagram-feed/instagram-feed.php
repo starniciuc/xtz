@@ -146,7 +146,7 @@ function display_instagram($atts, $content = null) {
     $sb_instagram_content .= '" '.$sb_instagram_styles .' data-id="' . $sb_instagram_user_id . '" data-num="' . trim($atts['num']) . '" data-res="' . trim($atts['imageres']) . '" data-cols="' . trim($sb_instagram_cols) . '" data-options=\'{&quot;sortby&quot;: &quot;'.$atts['sortby'].'&quot;, &quot;headercolor&quot;: &quot;'.$sb_instagram_header_color.'&quot;}\'>';
 
     //Header
-    if( $sb_instagram_show_header ) $sb_instagram_content .= '<div class="sb_instagram_header-h1" style="padding: '.(2*intval($sb_instagram_image_padding)) . $sb_instagram_image_padding_unit .'; padding-bottom: 0;"><h1 style="color: #FFFFFF; font-weight: 900;" class="text-center">Instagram #XTZone</h1></div>';
+    if( $sb_instagram_show_header ) $sb_instagram_content .= '<div class="sb_instagram_header-h1" style="padding: '.(2*intval($sb_instagram_image_padding)) . $sb_instagram_image_padding_unit .'; padding-bottom: 0;"><h1 style="color: #FFFFFF; font-weight: 800;" class="text-center"><a href="https://instagram.com/xtzone" style="color: #FFFFFF;">INSTAGRAM #XTZone</a></h1></div>';
 
     //Images container
     $sb_instagram_content .= '<div id="sbi_images" style="padding: '.$sb_instagram_image_padding . $sb_instagram_image_padding_unit .';">';

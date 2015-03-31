@@ -280,8 +280,8 @@
 #sb_instagram .sbi_follow_btn a:focus,
 #sb_instagram #sbi_load .sbi_load_btn:hover,
 #sb_instagram #sbi_load .sbi_load_btn:focus{
-  filter: alpha(opacity=85);
-  opacity: 0.85;
+    background: #FFFFFF;
+    color: #FF4000;
 }
 #sb_instagram #sbi_load .fa,
 #sb_instagram .sbi_follow_btn .fa{
