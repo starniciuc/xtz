@@ -84,6 +84,20 @@ function optionsframework_options() {
 		'id' => 'price',
 		'class' => '',
 		'type' => 'upload');	
+	
+	$options[] = array(
+		'name' => __('Work time', 'inkness'),
+		'desc' => __('Work time', 'inkness'),
+		'id' => 'work_time',
+		'class' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'name' => __('Work time weekend', 'inkness'),
+		'desc' => __('Work time in weekend', 'inkness'),
+		'id' => 'work_time_weekend',
+		'class' => '',
+		'type' => 'text');	
         
 	//SLIDER SETTINGS
 
