@@ -76,13 +76,13 @@
 
 										<li>
 
-											<a href="<?php echo get_page_link(92); ?>" class="price-btn">PRICELIST</a>
+											<a href="<?php echo get_page_link(92); ?>" class="price-btn"><?php  echo (get_bloginfo("language") != "ru-RU")?"PRICELIST":"ПРАЙС-ЛИСТ";?></a>
 
 										</li>
 
 										<li>
 
-											<a href="<?php echo get_page_link(18); ?>" class="adress-link">Adresa noastra</a>
+											<a href="<?php echo get_page_link(18); ?>" class="adress-link"><?php  echo (get_bloginfo("language") != "ru-RU")?"Adresa noastra":"Наш адрес";?></a>
 
 										</li>
 
@@ -117,110 +117,70 @@
 										</div>
 
 									</div>
-
-
-
 									<div class="work-time">
-
 										<div class="arr-info"></div>
-
 										<div class="slide-h"></div>
-
 										<div class="info-block">
-
 											<div class="info">
-
 												<a href="tel:+37368110811" class="call-numb">068 11 08 11</a>
-
-												<p class="adress">Azi <i class="fa fa-clock-o"></i> <?php if ((date("N") == 7) || (date("N") == 6)) echo "10:00–19:00";
+												<p class="adress"><?php  echo (get_bloginfo("language") != "ru-RU")?"Azi":"Сегодня";?> <i class="fa fa-clock-o"></i> <?php if ((date("N") == 7) || (date("N") == 6)) echo "10:00–19:00";
 else echo "07:00–24:00"; ?></p>
-
 												<a href="http://xtz.saga.md/?page_id=18#harta" class="str">Gh. Asachi 62/6</a>
-
 											</div>
-
 											<div class="hiden-block">
-
 												<p>078 11 08 11</p>
-
 												<p>022 73 84 11</p> 
-
-												<a href="http://xtz.saga.md/?page_id=18#harta" class="show-map">Vezi harta</a>
-
+												<a href="http://xtz.saga.md/?page_id=18#harta" class="show-map"><?php  echo (get_bloginfo("language") != "ru-RU")?"Vezi harta":"Показать на карте";?></a>
 											</div>
-
 										</div>
-
 									</div>
-
 								</div>
-
                             </div>
-
 						</div>
-
 					</div>
 
             </header><!-- #masthead -->
 
 <?php
+$l = get_bloginfo("language");
+$lang = ($l == 'ru-RU')?"_rus":"";
+
 if ((function_exists('of_get_option')) && (of_get_option('slidetitle5', true) != 1)) {
-
-	if (( of_get_option('slider_enabled') != 0 ) && (is_home())) {
+	if (( of_get_option('slider_enabled'.$lang) != 0 ) && (is_home())) {
 		?>
-
 					<div class="slider-wrapper theme-default"> 
-
 						<div class="ribbon"></div>    
-
 						<div id="slider" class="nivoSlider">
-
 					<?php
 					$slider_flag = false;
-
-					for ($i = 1; $i < 6; $i++) {
-
-						$caption = ((of_get_option('slidetitle' . $i, true) == "") ? "" : "#caption_" . $i);
-
-						if (of_get_option('slide' . $i, true) != "") {
-
-							echo "<a href='" . esc_url(of_get_option('slideurl' . $i, true)) . "'><img src='" . of_get_option('slide' . $i, true) . "' title='" . $caption . "'></a>";
-
+					
+					
+					for ($i = 1; $i < 10; $i++) {
+						$caption = ((of_get_option('slidetitle' . $i.$lang, true) == "") ? "" : "#caption_" . $i);
+						if (of_get_option('slide' . $i.$lang, true) != "") {
+							echo "<a href='" . esc_url(of_get_option('slideurl' . $i.$lang, true)) . "'><img src='" . of_get_option('slide' . $i.$lang, true) . "' title='" . $caption . "'></a>";
 							$slider_flag = true;
 						}
 					}
 					?>  
-
 						</div><!--#slider-->
-
 							<?php
-							for ($i = 1; $i < 6; $i++) {
-
-								$caption = ((of_get_option('slidetitle' . $i, true) == "") ? "" : "#caption_" . $i);
-
+							for ($i = 1; $i < 10; $i++) {
+								$caption = ((of_get_option('slidetitle' . $i.$lang, true) == "") ? "" : "#caption_" . $i);
 								if ($caption != "") {
-
 									echo "<div id='caption_" . $i . "' class='nivo-html-caption'>"
 									. "<div class='nivocapper'>";
-
-									echo "<div class='slide-title'>" . of_get_option('slidetitle' . $i, true) . "</div>";
-
-									echo "<div class='slide-description'>" . of_get_option('slidedesc' . $i, true) . "</div>";
-
-									echo "<a href='" . esc_url(of_get_option('slideurl' . $i, true)) . "' class='btn btn-slide'>Citește mai mult</a>";
-
+									echo "<div class='slide-title'>" . of_get_option('slidetitle' . $i.$lang, true) . "</div>";
+									echo "<div class='slide-description'>" . of_get_option('slidedesc' . $i.$lang, true) . "</div>";
+									echo "<a href='" . esc_url(of_get_option('slideurl' . $i.$lang, true)) . "' class='btn btn-slide'>".of_get_option('more'.$lang, true)."</a>";
 									echo "</div></div>";
 								}
 							}
 							?>
-
 					</div>	
-
 						<?php
 					}
 				}
 				?>
-
             <div class="site-content clearfix clear">
-
                 <div class="container-fluid"> 

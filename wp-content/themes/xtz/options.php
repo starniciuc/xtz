@@ -57,7 +57,28 @@ function optionsframework_options() {
 		'class' => '',
 		'type' => 'upload');	
 	
-        $options[] = array(
+	$options[] = array(
+		'name' => __('Banner Oferte Rus', 'inkness'),
+		'desc' => __('Top banner for oferte speciale page.', 'inkness'),
+		'id' => 'banner_oferte_rus',
+		'class' => '',
+		'type' => 'upload');	
+	
+	$options[] = array(
+		'name' => __('More Romanian', 'inkness'),
+		'desc' => __('More in romanian', 'inkness'),
+		'id' => 'more',
+		'class' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'name' => __('More Russian', 'inkness'),
+		'desc' => __('More in russian', 'inkness'),
+		'id' => 'more_rus',
+		'class' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
 		'name' => __('Price', 'inkness'),
 		'desc' => __('List of price.', 'inkness'),
 		'id' => 'price',
@@ -355,6 +376,300 @@ function optionsframework_options() {
 	$options[] = array(
 		'desc' => __('Url', 'inkness'),
 		'id' => 'slideurl11',
+		'std' => '',
+		'type' => 'text');	
+			
+	//SLIDER SETTINGS RUSSIAN
+
+	$options[] = array(
+		'name' => __('Slider Settings Russian', 'inkness'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Enable Slider', 'inkness'),
+		'desc' => __('Check this to Enable Slider.', 'inkness'),
+		'id' => 'slider_enabled_rus',
+		'type' => 'checkbox',
+		'std' => '0' );
+			
+		
+	$options[] = array(
+		'name' => __('Using the Slider', 'inkness'),
+		'desc' => __('This Slider supports upto 5 Images. To show only 3 Slides in the slider, upload only 3 images. Leave the rest Blank. For best results, upload images of same dimensions.', 'inkness'),
+		'type' => 'info');
+
+	$options[] = array(
+		'name' => __('Slider Image 1', 'inkness'),
+		'desc' => __('First Slide', 'inkness'),
+		'id' => 'slide1_rus',
+		'class' => '',
+		'type' => 'upload');
+	
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle1_rus',
+		'std' => '',
+		'type' => 'text');
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc1_rus',
+		'std' => '',
+		'type' => 'textarea');			
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl1_rus',
+		'std' => '',
+		'type' => 'text');		
+	
+	$options[] = array(
+		'name' => __('Slider Image 2', 'inkness'),
+		'desc' => __('Second Slide', 'inkness'),
+		'class' => '',
+		'id' => 'slide2_rus',
+		'type' => 'upload');
+	
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle2_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc2_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl2_rus',
+		'std' => '',
+		'type' => 'text');	
+		
+	$options[] = array(
+		'name' => __('Slider Image 3', 'inkness'),
+		'desc' => __('Third Slide', 'inkness'),
+		'id' => 'slide3_rus',
+		'class' => '',
+		'type' => 'upload');	
+	
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle3_rus',
+		'std' => '',
+		'type' => 'text');	
+		
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc3_rus',
+		'std' => '',
+		'type' => 'textarea');	
+			
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl3_rus',
+		'std' => '',
+		'type' => 'text');		
+	
+	$options[] = array(
+		'name' => __('Slider Image 4', 'inkness'),
+		'desc' => __('Fourth Slide', 'inkness'),
+		'id' => 'slide4_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle4_rus',
+		'std' => '',
+		'type' => 'text');
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc4_rus',
+		'std' => '',
+		'type' => 'textarea');			
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl4_rus',
+		'std' => '',
+		'type' => 'text');		
+	
+	$options[] = array(
+		'name' => __('Slider Image 5', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide5_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle5_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc5_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl5_rus',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 6', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide6_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle6_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc6_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl6_rus',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 7', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide7_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle7_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc7_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl7_rus',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 8', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide8_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle8_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc8_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl8_rus',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 9', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide9_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle9_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc9_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl9_rus',
+		'std' => '',
+		'type' => 'text');	
+        
+	$options[] = array(
+		'name' => __('Slider Image 10', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide10_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle10_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc10_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl10_rus',
+		'std' => '',
+		'type' => 'text');
+        
+	$options[] = array(
+		'name' => __('Slider Image 11', 'inkness'),
+		'desc' => __('Fifth Slide', 'inkness'),
+		'id' => 'slide11_rus',
+		'class' => '',
+		'type' => 'upload');	
+		
+	$options[] = array(
+		'desc' => __('Title', 'inkness'),
+		'id' => 'slidetitle11_rus',
+		'std' => '',
+		'type' => 'text');	
+	
+	$options[] = array(
+		'desc' => __('Description or Tagline', 'inkness'),
+		'id' => 'slidedesc11_rus',
+		'std' => '',
+		'type' => 'textarea');		
+		
+	$options[] = array(
+		'desc' => __('Url', 'inkness'),
+		'id' => 'slideurl11_rus',
 		'std' => '',
 		'type' => 'text');	
 			

@@ -1,3 +1,4 @@
+<?php if(get_the_ID() != 125):?>
 <div class="testimonial-slider">
     <div class="container">    
         <div class="rows">
@@ -18,3 +19,4 @@
         </div>
     </div><!-- #secondary -->
 </div>
+<?php endif;?>

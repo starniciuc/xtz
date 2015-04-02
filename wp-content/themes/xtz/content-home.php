@@ -1,4 +1,7 @@
-
+<?php 
+	$l = get_bloginfo("language");
+	$lang = ($l == 'ru-RU')?"_rus":"";
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class("homa archive"); ?>>
     
         <div class="col-left">
@@ -20,7 +23,7 @@
                     <?php the_excerpt(); ?>
                 </div><!-- .entry-content -->
             <?php endif; ?>
-            <a href="<?php the_permalink(); ?>" rel="bookmark" class="btn btn-more-post">Citește mai mult</a>
+            <a href="<?php the_permalink(); ?>" rel="bookmark" class="btn btn-more-post"><?php echo of_get_option('more'.$lang, true); ?></a>
         </div>
     <div class="clearfix"></div>
 </article><!-- #post-## -->

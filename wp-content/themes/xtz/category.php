@@ -17,13 +17,15 @@ get_header(); ?>
     $id_cat =  the_category_ID($echo=false);
         if($id_cat == 1 || $id_cat == 4 ):
             if ( have_posts() ) : 
+				$l = get_bloginfo("language");
+	$lang = ($l == 'ru-RU')?"_rus":"";
             ?>
 
               <div id="primary-home" class="content-area">
                 <main id="main" class="site-main" role="main">
                   
-                         <?php if ((of_get_option('banner_oferte', true) != "") && (of_get_option('banner_oferte', true) != 1)) { 
-                             $img = of_get_option('banner_oferte');
+                         <?php if ((of_get_option('banner_oferte'.$lang, true) != "") && (of_get_option('banner_oferte'.$lang, true) != 1)) { 
+                             $img = of_get_option('banner_oferte'.$lang);
                              echo "<div class='banner'><img src='$img'></div>";
                             }
                             ?>

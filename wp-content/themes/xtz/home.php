@@ -15,8 +15,11 @@ get_header(); ?>
 
 	<div id="primary-home" class="content-area">
 		<main id="main" class="site-main" role="main">
-                    
-                    <h1 class="text-center">OFERTE SPECIALE</h1>
+				<?php  if(get_bloginfo("language") != "ru-RU"){?>
+									<h1 class="text-center">OFERTE SPECIALE</h1>
+				<?php }else{?>
+									<h1 class="text-center">АКЦИЙ</h1>
+				<?php } ?>
                     
 		<?php if ( have_posts() ) : ?>
 
